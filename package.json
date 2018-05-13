@@ -1,0 +1,9 @@
+{
+  "name": "chill-react-boilerplate",
+  "version": "1.0.0",
+  "description": "A Simple React Boilerplate ",
+  "main": "index.js",
+  "author": "Colin Hill <cwh@colinwhill.com>",
+  "license": "MIT ",
+  "private": false
+}
