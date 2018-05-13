@@ -8,6 +8,15 @@ module.exports = {
   output: {
     filename: '[name].[hash].js',
     path: path.resolve('./dist')
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js?x$/,
+        exclude: ['node_modules'],
+        user: [{ loader: 'babel-laoder'}],
+      }
+    ]
   }
 }
 
