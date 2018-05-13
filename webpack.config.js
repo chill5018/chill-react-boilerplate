@@ -14,13 +14,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js?x$/,
+        test: /\.js$/,
         exclude: ['node_modules'],
-        user: [{ loader: 'babel-laoder'}],
+        use: [{ loader: 'babel-loader' }],
       },
       {
-        test: /\/s(a|c)ss$/,
-        user: [{
+        test: /\.s(a|c)ss$/,
+        use: [{
           loader: 'style-loader'
         }, {
           loader: 'css-loader'
@@ -35,6 +35,11 @@ module.exports = {
       template: 'index.html'
     }),
     new CleanWebpackPlugin(['dist'])
-  ]
+  ],
+  devServer: {
+    host: 'localhost',
+    port: 3000,
+    open: true,
+  }
 }
 

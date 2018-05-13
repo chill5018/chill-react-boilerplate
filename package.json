@@ -7,6 +7,7 @@
   "license": "MIT ",
   "private": false,
   "scripts": {
+    "start": "webpack-dev-server",
     "test": "jest ./test"
   },
   "dependencies": {
@@ -30,7 +31,9 @@
     "react-test-renderer": "^16.3.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
-    "webpack": "^4.8.3"
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
