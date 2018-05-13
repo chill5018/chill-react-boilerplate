@@ -6,6 +6,9 @@
   "author": "Colin Hill <cwh@colinwhill.com>",
   "license": "MIT ",
   "private": false,
+  "scripts": {
+    "test": "jest ./test"
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
@@ -15,6 +18,13 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.2"
+  },
+  "jest" : {
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   }
 }
